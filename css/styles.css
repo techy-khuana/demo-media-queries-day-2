@@ -12,3 +12,16 @@
 body {
     font-family: 'Noto Sans', sans-serif;
 }
+
+section a {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 0.25rem;
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+section a:hover {
+    background-color: rgba(0,0,0,0.6);
+}
