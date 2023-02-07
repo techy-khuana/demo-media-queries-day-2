@@ -13,6 +13,25 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
 section a {
     background-color: rgba(0,0,0,0.8);
     border-radius: 0.25rem;
@@ -24,4 +43,71 @@ section a {
 
 section a:hover {
     background-color: rgba(0,0,0,0.6);
+}
+
+.container > section:nth-of-type(even) {
+    background-color: #3d1f10;
+    margin-bottom: 1rem;
+}
+
+.container > section:nth-of-type(odd) {
+    background-color: #b9a072;
+    margin-bottom: 1rem;
+}
+
+section > div {
+    padding: 1.5rem;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 545px) {
+    .container > section {
+        display: flex;
+        align-items: center;
+    }
+
+    section img,
+    section > div {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    .container {
+        display: flex;
+        flex-flow: wrap;
+        gap: 2%
+    }
+
+    .container > section {
+        width: calc(98%/2);
+    }
+
+    .container > section:first-of-type {
+        order:1;
+    }
+
+    .container > section:nth-of-type(2) {
+        order:2;
+    }
+
+    .container > section:nth-of-type(4) {
+        order:3;
+    }
+
+    .container > section:nth-of-type(3) {
+        order:4;
+    }
+
+    .container > section:nth-of-type(5) {
+        order:5;
+    }
+
+    .container > section:last-of-type {
+        order:6;
+    }
+
+    h2 {
+        width: 100%;
+    }
 }
